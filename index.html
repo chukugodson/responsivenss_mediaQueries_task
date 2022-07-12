@@ -5,34 +5,50 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>responsiveness</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="stylem.css">
 </head>
-<body>
+<body class="house">
 
-    <main>
+    <main class="container">
         <div class=" write-up">
-            
+            <h1 class="head"> Learn to code by watching others </h1>
+            <p class="wp">See how experienced developers solve problems in real-time. Watching scripted tutorials is great, but understanding how developers think is invaluable.</p>
         </div>
-        <div class="form-container">
-            <form class="form">
-                <div class="input-container">
-                    <input type="text" name="First-name" placeholder="First-name" id="First-name">
-                </div>
-                <div class="input-container">
-                    <input type="text" name="Last-name" placeholder="Last-name" id="Last-name">
-                </div>
-                <div class="input-container">
-                    <input type="email" name="email" placeholder="Email Address" id="email">
-                </div>
-                <div class="input-container">
-                    <input type="password" name="pass" placeholder="Password" id="pass">
-                </div>
-                
-                <div class="button-container">
-                   <button type="submit">Submit</button>
-                </div>
-
-            </form>
+        <div class="right" >
+            <div class="parag-r"> 
+                <p> <span>Try it free 7 days</span> then $20/mo. thereafter.</p>
+            </div>
+            <div class="form-container">
+                <form class="form">
+                    <div class="input-container">
+                        <input type="text" name="First-name" placeholder="First-name" id="First-name" required>
+                        <i><img src="icon-error.svg" alt=""></i>
+                        <small> First Name cannot be empty </small>
+                    </div>
+                    <div class="input-container">
+                        <input type="text" name="Last-name" placeholder="Last-name" id="Last-name" required>
+                        <i><img src="icon-error.svg" alt=""></i>
+                        <small> Last Name cannot be empty </small>
+                    </div>
+                    <div class="input-container">
+                        <input type="email" name="email" placeholder="Email Address" id="email" required>
+                        <i><img src="icon-error.svg" alt=""></i>
+                        <small> Looks like this is not an email </small>
+                    </div>
+                    <div class="input-container">
+                        <input type="password" name="pass" placeholder="Password" id="pass" required>
+                        <i><img src="icon-error.svg" alt=""></i>
+                        <small> Password cannot be empty </small>
+                    </div>
+                    
+                    <div class="button-container">
+                       <button class="submit" type="submit"><span> CLAIM YOUR FREE TRIAL</span> </button>
+                    </div>
+                    <div class="footer">
+                        <p style="color: hsl(246, 25%, 77%);"> By clicking the button you are agreeing to our <button class="f-butt"> <span style="color:hsl(0, 100%, 74%) ;"> Terms and Services</span></button></p>
+                    </div>
+                </form>
+            </div>
         </div>
     </main>
 </body>
